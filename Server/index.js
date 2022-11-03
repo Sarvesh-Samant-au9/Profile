@@ -6,6 +6,7 @@ require("express-async-errors");
 const cors = require("cors");
 const morgan = require("morgan");
 const app = express();
+const cloudinary = require("cloudinary");
 const connectDB = require("./Config/db");
 app.use(morgan("dev"));
 app.use(express.json({ limit: "10mb" }));
